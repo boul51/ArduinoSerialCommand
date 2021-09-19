@@ -41,6 +41,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #include "WProgram.h"
 #endif
 
+#ifndef SERIAL_IFACE
+#error "Please define SERIAL_IFACE to Serial (programming port) or SerialUSB (native port)"
+#endif
+
 // If you want to use SerialCommand with the hardware serial port only, and want to disable
 // SoftwareSerial support, and thus don't have to use "#include <SoftwareSerial.h>" in your
 // sketches, then uncomment this define for SERIALCOMMAND_HARDWAREONLY, and comment out the 
