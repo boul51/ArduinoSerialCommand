@@ -55,10 +55,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 // the SoftwareSerial.h header. 
 //#define SERIALCOMMAND_HARDWAREONLY 1
 
-#ifdef SERIALCOMMAND_HARDWAREONLY
-#warning "Warning: Building SerialCommand without SoftwareSerial Support"
-#endif
-
 #ifndef SERIALCOMMAND_HARDWAREONLY 
 #include <SoftwareSerial.h>  
 #endif
